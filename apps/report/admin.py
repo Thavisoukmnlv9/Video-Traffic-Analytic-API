@@ -3,11 +3,11 @@ from .models import Report
 
 
 class ReportAdmin(admin.ModelAdmin):
-    list_display = ('color', 'district','image')
+    list_display = ('color', 'district','image',)
 
     fieldsets = (
         (None, {
-            'fields': ('color', 'district','image')
+            'fields': ('color', 'district','image',)
         }),
     )
 

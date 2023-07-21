@@ -26,6 +26,7 @@ urlpatterns = [
          cache_timeout=0)), name='schema-swagger-ui'),
     path("api/v1/auth/", include("dj_rest_auth.urls")),
     path('', include('apps.user.api.v1.urls'), name='user'),
+    path('', include('apps.report.api.v1.urls'), name='report'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
