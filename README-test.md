@@ -6,7 +6,7 @@ Activate environment
     source venv/bin/activate
 
 ## Install dependencies
-    pip install -r dev-requirements.txt
+    pip install -r requirements-test.txt
 
 
 Basic Settings

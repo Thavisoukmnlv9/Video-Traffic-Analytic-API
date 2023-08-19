@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 # Path of the image
-img_path = 'apps/assets/img/123.jpg'
+img_path = 'apps/assets/img/imgRoi1.jpg'
 img = cv2.imread(img_path)
 img_copy = img.copy()
 
@@ -15,7 +15,7 @@ os.putenv('TESSDATA_PREFIX','D:\OCR\tessdata\lao.traineddata')
 # Open the image using PIL
 
 # Use Tesseract to extract text from the image
-text = pyt.image_to_string(gray_img, lang='eng+lao')
+text = pyt.image_to_string(gray_img, lang='lao', config='--dpi 2400 --psm 12')
 
 
 # Save the text to a .txt file

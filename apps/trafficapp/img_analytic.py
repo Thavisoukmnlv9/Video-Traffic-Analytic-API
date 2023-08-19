@@ -16,7 +16,7 @@ while True:
         area = w*h
     
     if area > minArea:
-       cv2.rectangle(img, (x, y+10), (x+w-30, y+h+50), (0,0,255),2)
+       cv2.rectangle(img, (x, y+10), (x+w-25, y+h+50), (0,0,255),2)
        cv2.putText(img, "Numberplate",(x,y), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,0,0),2)
        imgRoi = img[y:y+h+50, x:x+w-25]
        
