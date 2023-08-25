@@ -30,7 +30,7 @@ and Django Secret Key
 ## Make migrations and Apply to database # create migrations files (every new django app)
 
     python manage.py makemigrations
-    python manage.py makemigrations  report
+    python manage.py makemigrations video infraction_tracker
     python manage.py migrate
 
 ## Setup Initial User, and Admin

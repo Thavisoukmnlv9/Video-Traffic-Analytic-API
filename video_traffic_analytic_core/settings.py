@@ -25,6 +25,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 INSTALLED_APPS = [
     'user',
     'report',
+    'video',
+    'infraction_tracker',
 
     'django.contrib.contenttypes',
     'django.contrib.auth',
@@ -151,9 +153,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 REST_FRAMEWORK = {
-    # "DEFAULT_PERMISSION_CLASSES": (
-    #     "rest_framework.permissions.IsAuthenticated",
-    # )
     'DEFAULT_PAGINATION_CLASS': 'common.pagination.page.PageWithTotalPage',
     'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': (
